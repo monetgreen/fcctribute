@@ -1,16 +1,18 @@
 body {
     background: linear-gradient(202.17deg, #E6FFB0 2.87%, #FFFFFF 85.52%);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     font-family: degular-text;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
 }
 
 #main {
-    max-width: 1200px;
+    max-width: 1100px;
     display: flex;
+    margin:40px 60px;
 }
 
 #img-div {
@@ -34,6 +36,7 @@ body {
 #tribute-info {
     width: 60%;
     margin-left: 60px;
+    margin-right: 20px
 }
 
 .info h2 {
@@ -57,9 +60,13 @@ body {
     line-height: 1.5;
 }
 
+.button-wrap {
+    text-align: center;
+}
+
 a {
     font-family: Gooper;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     font-style: italic;
     text-decoration: none;
@@ -69,10 +76,60 @@ a {
     border-radius: 10px;
     transition: all 0.3s ease;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 14px;
 }
 
 a:hover {
     background-color: #ED4ECA;
     color: #fff;
+}
+
+@media (max-width: 800px) {
+    a {
+        padding: 15px 20px 17px;
+    }
+}
+
+@media (max-width: 730px) {
+    body {
+        height: auto;
+        font-size: 14px;
+    }
+
+    #main {
+        flex-direction: column;
+        margin: 40px 30px 50px;
+    }
+
+    #img-div {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #img-caption {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .info h1 {
+        font-size: 56px;
+        margin-bottom: 18px;
+    }
+
+    #tribute-info {
+        width: 100%;
+        margin: auto;
+    }
+
+    a {
+        font-size: 16px;
+        border: solid 2.5px #ED4ECA;
+        padding: 10px 30px 12px;
+    }
 }
